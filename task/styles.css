@@ -1,0 +1,62 @@
+body {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+#editor {
+    display: flex;
+    flex-direction: column;
+}
+
+a, #editor > * {
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px cornflowerblue;
+    margin: 20px;
+}
+
+#editor > textarea {
+    height: 90px;
+}
+
+#editor > button, a {
+    box-shadow: none;
+    background-color: cornflowerblue;
+}
+
+#editor > button:hover {
+    box-shadow: none;
+    background-color: rgb(59, 121, 236);
+    cursor: pointer;
+}
+
+
+#editor > a {
+    margin-top: 0;
+    box-shadow: none;
+    background-color: tomato;
+    text-decoration: none;
+    color: white;
+    line-height: 30px;
+}
+
+a:hover {
+    box-shadow: none;
+    background-color: brown;
+    cursor: pointer;
+}
+
+#card-board {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    margin: 5px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px gray;
+}
