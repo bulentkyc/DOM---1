@@ -22,18 +22,26 @@ alert(pContent);
 const welcoming = document.getElementById('welcoming');
 console.log(welcoming);
 
-welcoming.innerHTML = 'Yeyyyy!';
+//welcoming.innerHTML = 'Yeyyyy!';
 
 console.log(document.getElementById('welcoming'));
 
 
-const card = document.getElementById('card1');
 const cardBoard = document.getElementById('card-board');
 
 let count = parseInt(prompt('How many cards do you need?'));
 
 for (let i = 0; i < count; i++) {
-    cardBoard.innerHTML += card.outerHTML;
+    let card = `
+    <div id="card${i}" class="card">
+    <h3>${title}</h3>
+    <img src="https://picsum.photos/200/200?random=${i}">
+    <p>
+        ${exp}
+    </p>
+    </div>
+    `;
+    cardBoard.innerHTML += card;
 }
 
 
